@@ -31,17 +31,6 @@
             <li class="nav-item">
               <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                News
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">News 1</a>
-                <a class="dropdown-item" href="#">News 2</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">News 3</a>
-              </div>
-            </li>
           </ul>
         </div>
       </nav>
@@ -53,7 +42,7 @@
           <h1>Distances calculator</h1>
 
           <label for="distance_meters">Enter distance in meters</label>
-          <input type="text" class="form-control" id="distance_meters">
+          <input type="text" class="form-control" id="distance_meters" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}">
           <hr>
           <label for="distance_centimeter">Distance in centimeters</label>
           <input type="text" class="form-control" id="distance_centimeters" readonly>

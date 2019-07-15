@@ -1,6 +1,6 @@
-$('#distance_meters').click(function(){
- 	var newValue = $(this).val();
+$('#distance_meters').keyup(function(){
+ 	var distance = $(this).val();
 
- 	$('#distance_centimeters').val(newValue*100);
- 	$('#distance_millimeters').val(newValue*1000);
+ 	$('#distance_centimeters').val(distance*100);
+ 	$('#distance_millimeters').val(distance*1000);
 });
